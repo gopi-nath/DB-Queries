@@ -1,0 +1,1 @@
+DELETE FROM eviveportal.campaign_content WHERE type='WEB' and client_code='1058' and role='DEFAULT' and locale='en_US' and template_id='client_nudge_properties';

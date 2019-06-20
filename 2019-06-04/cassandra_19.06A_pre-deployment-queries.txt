@@ -1,0 +1,17 @@
+ALTER TABLE file_processing_automation.report_details ADD inactive_report boolean; 
+ALTER TABLE etl.eligibility_configuration ADD fields_to_copy_map map<text,text>; 
+
+Alter TABLE etl.eligibility_configuration DROP fields_to_copy;
+
+DROP TABLE etl.working_family_configuration; 
+
+CREATE TABLE etl.working_family_configuration (
+etl_type text,
+client_code text,
+benefit_type text,
+coverage_codes set<text>,
+fields_to_copy set<text>,
+invalid_plan_codes set<text>,
+PRIMARY KEY (etl_type, client_code, benefit_type)
+) WITH CLUSTERING ORDER BY (client_code ASC, benefit_type ASC); 
+
