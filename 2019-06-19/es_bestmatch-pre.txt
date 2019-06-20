@@ -1,0 +1,32 @@
+### Addition of sort keyword for final name in procedure
+curl -kv -H "Content-Type: application/json" -X PUT https://<PROD ES IP : PORT>/provider_procedure/_mapping/_doc '{
+  "properties": {
+    "final_name": {
+      "type": "text",
+      "analyzer": "ngram_analyzer",
+      "search_analyzer": "standard",
+      "fields": {
+        "sort": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}'
+
+
+### Addition of sort keyword for final name in speciality
+curl -kv -H "Content-Type: application/json" -X PUT https://<PROD ES IP : PORT>/provider_speciality/_mapping/_doc '{
+  "properties": {
+    "final_name": {
+      "type": "text",
+      "analyzer": "ngram_analyzer",
+      "search_analyzer": "standard",
+      "fields": {
+        "sort": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}'
