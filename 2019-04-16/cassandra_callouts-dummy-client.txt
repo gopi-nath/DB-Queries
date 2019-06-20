@@ -4,8 +4,6 @@ UPDATE communication_manager.client_properties SET enabled_topics = enabled_topi
 update communication_manager.automated_nudge_jobs set clients = clients + {'1057'} where hours = 21 and minutes = 30;
 update communication_manager.automated_nudge_jobs set clients = clients + {'1057'} where hours = 10 and minutes = 0;
 delete from etl.mapping_configuration  where etl_type='quantum_encounter';
-INSERT INTO dashboard.help_centre_topics (id , client_code , icon, title) VALUES ( '22ynCdklVE', '1058', 'https://de8648fcc97919018f1c-c982cffc260eed303d5d5c3f1aee0c75.ssl.cf1.rackcdn.com/home.svg', 'General');
-INSERT INTO dashboard.help_centre_topics (id , client_code , icon, title) VALUES ( 'g99dBD6H9c', '1058', 'https://de8648fcc97919018f1c-c982cffc260eed303d5d5c3f1aee0c75.ssl.cf1.rackcdn.com/gameDay.svg', 'Game Day');
 INSERT INTO dashboard.hc_eligible_topics (client_code , role , topics ) VALUES ( '1058', 'role1', {'22ynCdklVE', 'g99dBD6H9c'});
 INSERT INTO dashboard.hc_eligible_topics (client_code , role , topics ) VALUES ( '1058', 'role2', {'22ynCdklVE', 'g99dBD6H9c'});
 INSERT INTO dashboard.hc_eligible_topics (client_code , role , topics ) VALUES ( '1058', 'role3', {'22ynCdklVE', 'g99dBD6H9c'});
