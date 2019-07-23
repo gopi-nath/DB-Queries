@@ -1,0 +1,1 @@
+UPDATE hhr.hhr_phenomenon_detail SET phenomenon_range = {'HIGH': {min_value: 5.6, max_value: 6.4}, 'HIGH_DANGER': {min_value: 6.4, max_value: 18}, 'LOW': {min_value: 3.3, max_value: 3.9}, 'NORMAL': {min_value: 3.9, max_value: 5.6}} WHERE client_code='1040' and gender='F' AND phenomenon_type='HBA1C' and age_group='DEFAULT';

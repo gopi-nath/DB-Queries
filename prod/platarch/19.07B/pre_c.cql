@@ -1,0 +1,1 @@
+ALTER TABLE file_processing_automation.etl_starter_configurations ADD inactive boolean;
