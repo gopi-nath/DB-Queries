@@ -1,1 +1,0 @@
-UPDATE dashboard.vendor_data set cta_text = 'Help Center' WHERE client_code = '' and id = '' and cta_type ='';
