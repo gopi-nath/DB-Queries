@@ -9,4 +9,4 @@ GRANT MODIFY PERMISSION ON communication_manager.encoded_pii TO smartusr;
 GRANT MODIFY PERMISSION ON communication_manager.encoded_pii TO masschusr;
 GRANT MODIFY PERMISSION ON communication_manager.encoded_pii TO reportsusr;
 GRANT MODIFY PERMISSION ON communication_manager.encoded_pii TO adminusr;
-
+//adding a dummy line here
